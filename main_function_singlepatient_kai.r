@@ -1,7 +1,7 @@
 main_function_singlepatient_kai=function(subject){
 
 library(R.matlab)
-dataset<-readMat(paste("../FacesHouses/data/", subject, "_faceshouses.mat", sep=""))
+dataset<-readMat(paste("data/", subject, "_faceshouses.mat", sep=""))
   
 stim=dataset$stim;
 srate=dataset$srate;
@@ -162,8 +162,8 @@ for (cf in 1:3)
 #avg_accuracy_bth=mean(accuracy_bth)
 #avg_accuracy=append(avg_accuracy_raw,avg_accuracy_bth)
 # 
- write.csv(accuracy_bth, file = paste("../FacesHouses/output/", subject,"_accuracy_bth.csv",sep=""))
- file=paste("output_",subject,".RData")
+ write.csv(accuracy_bth, file = paste("output/", subject,"_accuracy_bth.csv",sep=""))
+ file=paste("output/output_",subject,".RData")
  save.image(file)
 rm(list=ls()) 
 }

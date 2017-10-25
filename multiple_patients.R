@@ -4,7 +4,7 @@ library(PopED)
 library(fftw)
 
 # Set your working directory here
-setwd('../FacesHouses')
+setwd('.')
 
 source('main_function_singlepatient_kai.R')
 

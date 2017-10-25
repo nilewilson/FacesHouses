@@ -50,7 +50,7 @@ accuracy=sum(res$class==testing_label)/length(testing_label)
 #  res=res+1
 # accuracy=sum(res==testing_label)/length(testing_label)
 out=cbind(res$class, testing_label)
-write.csv(out, file = paste("../FacesHouses/output/",subject,"_label_",cf,".csv",sep=""))
+write.csv(out, file = paste("output/",subject,"_label_",cf,".csv",sep=""))
 return (accuracy <- accuracy)
        }
 
